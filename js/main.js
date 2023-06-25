@@ -49,6 +49,7 @@ window.onload = function() {
   Particles.init({
     selector: '.background',
     color: '#ECEFF1',
+    shape: 'circle',
     //connectParticles: true,
     maxParticles: 150,
     sizeVariations: 3,

@@ -58,7 +58,7 @@ input[type="date"] {
 button {
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #1f75fe;
     /* background: #007BFF; */
     /* color: #fff; */
@@ -74,7 +74,9 @@ button:hover {
 img,
 iframe {
     max-width: 100%;
+    max-height: auto;
     margin-top: 20px;
+    object-fit: fill;
 }
 
 h2,

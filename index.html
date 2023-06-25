@@ -5,27 +5,39 @@
     <meta name="description" content="This is where your description goes" />
     <meta name="keywords" content="one, two, three" />
     <!-- change the font -->
+    <!-- <link -->
+    <!-- href="https://fonts.googleapis.com/css?family=Roboto" -->
+    <!-- rel="stylesheet" -->
+    <!-- /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Roboto"
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&family=Titillium+Web&display=swap"
       rel="stylesheet"
     />
+
     <title>NASA APOD</title>
 
     <!-- external CSS link -->
-    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- <link rel="stylesheet" href="css/normalize.css" /> -->
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
   </head>
   <body>
-    <h1>NASA Astronomy Pic of The Day</h1>
+    <img id="nasa-logo" src="img/NASA_logo.svg.png" alt="NASA logo" />
+
+    <h1>NASA Astronomy Picture of The Day</h1>
     <input type="date" name="" value="" />
     <button type="button" name="button">Get Pic</button>
     <h2></h2>
-    <img src="" alt="" />
-    <h3>Explanation</h3>
+    <img id="apod-img" src="" alt="" />
+    <h3></h3>
 
     <!-- embeds a video -->
     <iframe src="" frameborder="0"></iframe>
 
     <script type="text/javascript" src="js/main.js"></script>
+    <canvas class="background"></canvas>
+    <script src="dist/particles.min.js"></script>
   </body>
 </html>

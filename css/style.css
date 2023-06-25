@@ -1,25 +1,129 @@
-/******************************************
-/* CSS
-/*******************************************/
-
 /* Box Model Hack */
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-/******************************************
-/* LAYOUT
-/*******************************************/
-img {
-    display: block;
-    margin: 0 auto;
-    flex: auto;
-}
-
-
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Titillium Web', normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    position: relative; /* To ensure z-index works properly*/
+    z-index: 1; /*Will stack on top of the canvas*/
+}
+#nasa-logo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    top: 200px;
+    left: 200px;
+    width: 200px;
+    /* shrink the image by setting a smaller width */
+    height: auto;
+    /* keeps the aspect ratio */
+}
+.background {
+    position: absolute;
+    background-color: #232741;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure it covers the whole screen width */
+    height: 100%; /* Ensure it covers the whole screen height*/
+    z-index: -1; /* It will stack under other elements */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #E0E0E2;
+    text-align: center;
+}
+
+input[type="date"] {
+    background-color: #4f6d7a;
+    color: #E0E0E2;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1f75fe;
+    /* background: #007BFF; */
+    /* color: #fff; */
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #007BFF;
+}
+
+img,
+iframe {
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+h2,
+h3 {
+    color: #8a898e;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    input[type="date"] {
+        font-size: 0.8em;
+    }
+
+    button {
+        font-size: 0.8em;
+    }
+
+    h2,
+    h3 {
+        font-size: 1.2em;
+    }
+
+}
+
+/* Media Query for Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    input[type="date"] {
+        font-size: 0.9em;
+    }
+
+    button {
+        font-size: 0.9em;
+    }
+
+    h2,
+    h3 {
+        font-size: 1.3em;
+    }
+
 }

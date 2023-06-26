@@ -95,6 +95,11 @@ h3 {
 
     input[type="date"] {
         font-size: 0.8em;
+        color:#E0E0E2;
+    }
+    
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        filter: invert(1);
     }
 
     button {

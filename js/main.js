@@ -37,9 +37,13 @@ function getFetch(){
 
 // function to display the data 
 function displayData(data) {
-   if (data.media_type === "image") {
+  if (data.media_type === "image") {
+          // reset the image src
+          document.querySelector('#apod-img').src = ""
           document.querySelector('#apod-img').src = data.hdurl
-        } else if (data.media_type === "video") {
+   } else if (data.media_type === "video") {
+          // reset the video src
+          document.querySelector('iframe').src = ""
           document.querySelector('iframe').src = data.url
         }
 }
